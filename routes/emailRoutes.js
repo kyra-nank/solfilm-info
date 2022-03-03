@@ -12,9 +12,9 @@ module.exports = (app) => {
       server: 'us14'
     });
 
-    // need to get this passed in from somewhere!
+    // pass in email as the body of request (do this in action creator)
     const subscribingUser = {
-      email: 'emmaknanvgggbbell@gmail.com'
+      email: req.body.email
     };
 
     try {
