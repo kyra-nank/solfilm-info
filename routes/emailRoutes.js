@@ -5,6 +5,7 @@ module.exports = (app) => {
 
   app.post('/api/signup', async (req, res) => {
 
+
     let emailAdded = false;
 
     mailchimp.setConfig({
@@ -17,18 +18,25 @@ module.exports = (app) => {
       email: req.body.email
     };
 
-    try {
-      await mailchimp.lists.addListMember('ebb0ff88cf',
-        {
-          email_address: subscribingUser.email,
-          status: 'subscribed',
-          merge_fields: {
-            EMAIL: subscribingUser.email
+    // VALIDATE EMAIL
+    const re = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    if (re.test(subscribingUser.email)) {
+      try {
+        await mailchimp.lists.addListMember('ebb0ff88cf',
+          {
+            email_address: subscribingUser.email,
+            status: 'subscribed',
+            merge_fields: {
+              EMAIL: subscribingUser.email
+            }
           }
-        }
-      );
-      emailAdded = true;
-    } catch (e) {
+        );
+        emailAdded = true;
+      } catch (e) {
+        emailAdded = false;
+      }
+    } else {
       emailAdded = false;
     }
 
