@@ -13,7 +13,7 @@ import Container from '@mui/material/Container';
 
 const Home = function () {
   return (
-    <div style={{ background: "linear-gradient(20deg, #ffffff, rgba(92,225,230,0.35), #ffffff, rgba(92,225,230,0.4), #ffffff)" }}>
+    <div style={{ background: "linear-gradient(20deg, #ffffff, rgba(92,225,230,0.25), #ffffff, rgba(92,225,230,0.25), #ffffff)" }}>
       <Header />
       <Container maxWidth="xl" style={{ padding: "0 3rem 0 3rem" }}>
         <Hero />
