@@ -5,9 +5,9 @@ import Box from '@mui/material/Box';
 
 const Team = function () {
   return (
-    <section id="team" style={{ scrollMarginTop: "3rem" }}>
+    <section id="team" style={{ scrollMarginTop: "3rem", margin: "8rem 0 10rem 0" }}>
       <Box style={{ paddingBottom: "2rem" }}>
-        <Typography variant="h4" style={{ marginBottom: "2rem" }}>Our Team</Typography>
+        <Typography variant="h4" style={{ marginBottom: "2rem" }}>Our Team &#128075;</Typography>
         <Grid container spacing={5}>
           <Grid item xs={12} md={6} align="center">
             <img style={{ height: "15rem", marginBottom: "1rem", padding: "3rem 0 3rem 0" }} src={require("../assets/kyra-pic.png")} />

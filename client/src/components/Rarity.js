@@ -54,8 +54,8 @@ const Rarity = function () {
   return (
     <section id="rarity" style={{ scrollMarginTop: "3rem" }}>
       <Box style={{ marginTop: "5rem", backgroundColor: "#fff" }}>
-        <Typography variant="h4" style={{ marginBottom: "2rem" }}>Rarity</Typography>
-        <Typography variant="subtitle1" style={{ marginBottom: "3rem" }}>Solfilm NFTs have “organic rarity.” We have not specified the rarity of each NFT in a computer program. Our NFTs have a human element. Each photo captures a unique moment in time with physical attributes related to the film setup. These include the type of film, the ISO, the photo number on the film roll, the length of strip a photo belongs to and the scenery.</Typography>
+        <Typography variant="h4" style={{ marginBottom: "2rem" }}>Rarity &#128142;</Typography>
+        <Typography variant="subtitle1" style={{ marginBottom: "3rem" }}>Solfilm NFTs have “organic rarity.” We have not specified the rarity of each NFT in a computer program. Our NFTs have a human element. Each photo captures a unique moment in time with physical attributes related to the film setup. These include the type of film, the ISO, the photo number on the film roll, the length of strip a photo belongs to and the scenery. Our first collection, Solfilm ISO 001, includes 239 photos.</Typography>
         {renderGrid()}
       </Box>
     </section>

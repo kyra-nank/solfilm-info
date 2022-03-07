@@ -37,8 +37,8 @@ const Join = function ({ submitEmail, status }) {
   };
 
   return (
-    <Box style={{ marginTop: "5rem", marginBottom: "3rem" }}>
-      <Typography variant="h4" style={{ marginBottom: "2rem" }}>Contribute & Earn</Typography>
+    <Box style={{ marginTop: "8rem", marginBottom: "12rem" }}>
+      <Typography variant="h4" style={{ marginBottom: "2rem" }}>Contribute & Earn &#128176;</Typography>
       <Typography variant="subtitle1" style={{ marginBottom: "2rem" }}>We’re on a mission to grow the coolest film collection in the world, and we can’t do it without an amazing community. If you’re interested in contributing to Solfilm and earning some SOL, leave your email below!</Typography>
 
       <Box

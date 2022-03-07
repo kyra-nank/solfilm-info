@@ -4,8 +4,8 @@ import Box from '@mui/material/Box';
 
 const Overview = function () {
   return (
-    <Box style={{ marginTop: "7rem" }}>
-      <Typography variant="h4" style={{ marginBottom: "2rem" }}>How does Solfilm work?</Typography>
+    <Box style={{ marginTop: "10rem", marginBottom: "10rem" }}>
+      <Typography variant="h4" style={{ marginBottom: "2rem" }}>How does Solfilm work? &#129300;</Typography>
       <Typography variant="subtitle1">
         <ul>
           <li>Mint a unique negative photo from our collection</li>

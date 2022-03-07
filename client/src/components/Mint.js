@@ -9,7 +9,7 @@ const Mint = function () {
   return (
     <section id="mint" style={{ scrollMarginTop: "3rem" }}>
       <Box style={{ marginTop: "5rem" }}>
-        <Typography variant="h4" style={{ marginBottom: "2rem" }}>Mint</Typography>
+        <Typography variant="h4" style={{ marginBottom: "2rem" }}>Mint | Solfilm ISO 001 &#128064;</Typography>
         <Grid container spacing={5} alignItems="center" justifyContent="center" style={{ padding: "3rem 0 3rem 0" }}>
           <Grid item xs={12} md={6} align="center">
             <img style={{ height: "20rem" }} src={require("../assets/preview.gif")} />
