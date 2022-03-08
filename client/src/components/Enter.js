@@ -34,7 +34,7 @@ const styles = {
     position: "absolute",
     zIndex: "-1",
     maxWidth: "100vw",
-    maxHeight: "100vh",
+    height: "100vh",
     margin: "0"
   },
   buttonStyle: {
