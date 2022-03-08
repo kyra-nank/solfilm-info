@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 const Hero = function () {
   return (
     <Box style={styles.containerStyle}>
-      <img style={styles.backgroundStyle} src={require("../assets/background2.png")} alt="film gradient background" />
+      <img style={styles.backgroundStyle} src={require("../assets/background2.png")} alt="film specs background" />
       <Box style={styles.textStyle}>
         <Typography align="center" variant="h4" style={{ marginBottom: "1rem" }}>Film x NFTs</Typography>
         <Typography align="center" variant="subtitle1">Each piece is truly 1 of 1 in the <br />physical and virtual world.</Typography>
