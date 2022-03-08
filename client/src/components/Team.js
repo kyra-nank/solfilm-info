@@ -10,12 +10,12 @@ const Team = function () {
         <Typography variant="h4" style={{ marginBottom: "2rem" }}>Our Team &#128075;</Typography>
         <Grid container spacing={5}>
           <Grid item xs={12} md={6} align="center">
-            <img style={{ height: "15rem", marginBottom: "1rem", padding: "3rem 0 3rem 0" }} src={require("../assets/kyra-pic.png")} />
+            <img style={{ height: "20rem", marginBottom: "1rem", padding: "3rem 0 3rem 0" }} src={require("../assets/kyra-pic.png")} />
             <Typography align="center" variant="h5">polumathes</Typography>
             <Typography align="center" variant="h6">Developer</Typography>
           </Grid>
           <Grid item xs={12} md={6} align="center">
-            <img style={{ height: "15rem", marginBottom: "1rem", padding: "3rem 0 3rem 0" }} src={require("../assets/alej-pic.png")} />
+            <img style={{ height: "20rem", marginBottom: "1rem", padding: "3rem 0 3rem 0" }} src={require("../assets/alej-pic.png")} />
             <Typography align="center" variant="h5">blvckjupiter</Typography>
             <Typography align="center" variant="h6">Photographer</Typography>
           </Grid>
