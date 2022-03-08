@@ -24,7 +24,7 @@ const Overview = function () {
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
-          <img style={{ height: "20rem" }} src={require("../assets/KN-Film.gif")} />
+          <img style={{ maxHeight: "20rem", maxWidth: "95%", height: "auto", width: "auto" }} src={require("../assets/KN-Film.gif")} />
         </Grid>
       </Grid>
 
