@@ -28,12 +28,13 @@ const styles = {
     flex: "1",
     justifyContent: "center",
     height: "100vh",
-    maxWidth: "100vw",
     backgroundColor: "transparent"
   },
   videoStyle: {
     position: "absolute",
     zIndex: "-1",
+    maxWidth: "100vw",
+    maxHeight: "100vh",
     margin: "0"
   },
   buttonStyle: {
