@@ -28,6 +28,7 @@ const styles = {
     flex: "1",
     justifyContent: "center",
     height: "100vh",
+    maxWidth: "100vw",
     backgroundColor: "transparent"
   },
   videoStyle: {
