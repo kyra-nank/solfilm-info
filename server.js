@@ -4,6 +4,17 @@ const bodyParser = require('body-parser');
 
 const app = express();
 // app.use(sslRedirect(['development', 'production']));
+
+// handle http to https redirect
+if(process.env.NODE_ENV === 'production') {
+  app.use((req, res, next) => {
+    if (req.header('x-forwarded-proto') !== 'https')
+      res.redirect(`https://${req.header('host')}${req.url}`)
+    else
+      next()
+  })
+}
+
 app.use(bodyParser.json());
 
 require('./routes/emailRoutes')(app);
