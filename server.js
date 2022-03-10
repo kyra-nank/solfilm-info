@@ -1,11 +1,9 @@
-// import sslRedirect from 'heroku-ssl-redirect';
 const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
-// app.use(sslRedirect(['development', 'production']));
 
-// handle http to https redirect
+// handle http to https redirect - works perfectly!
 if(process.env.NODE_ENV === 'production') {
   app.use((req, res, next) => {
     if (req.header('x-forwarded-proto') !== 'https')
