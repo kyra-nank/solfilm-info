@@ -1,7 +1,9 @@
+import sslRedirect from 'heroku-ssl-redirect';
 const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
+app.use(sslRedirect());
 app.use(bodyParser.json());
 
 require('./routes/emailRoutes')(app);
