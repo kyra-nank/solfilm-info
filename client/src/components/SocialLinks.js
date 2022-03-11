@@ -13,12 +13,20 @@ const SocialLinks = function () {
       >
         <i className="fa-brands fa-discord"></i>
       </IconButton>
+      
       <IconButton
         size="medium"
         sx={{ "&:hover": { color: "#00C2CB" }, color: "#000" }}
         href="https://twitter.com/SolfilmNFT"
       >
         <i className="fa-brands fa-twitter"></i>
+      </IconButton>
+
+      <IconButton
+        sx={{ "&:hover": { color: "#00C2CB" }, color: "#000", fontSize: "1.65rem" }}
+        href="https://www.instagram.com/solfilm.nft/"
+      >
+        <i className="fa-brands fa-instagram"></i>
       </IconButton>
 
     </div>
