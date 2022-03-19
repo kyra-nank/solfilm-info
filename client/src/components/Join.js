@@ -5,10 +5,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
-import FilledInput from '@mui/material/FilledInput';
 import FormControl from '@mui/material/FormControl';
-import FormHelperText from '@mui/material/FormHelperText';
-import Input from '@mui/material/Input';
 import InputLabel from '@mui/material/InputLabel';
 import OutlinedInput from '@mui/material/OutlinedInput';
 
@@ -37,8 +34,8 @@ const Join = function ({ submitEmail, status }) {
   };
 
   return (
-    <Box style={{ marginTop: "8rem", marginBottom: "12rem" }}>
-      <Typography variant="h4" style={{ marginBottom: "2rem" }}>Contribute & Earn &#128176;</Typography>
+    <Box style={{ paddingTop: "5rem", paddingBottom: "5rem" }}>
+      <Typography variant="h5" style={{ marginBottom: "2rem", color: "#FFF" }}>CONTRIBUTE & EARN &#128176;</Typography>
       <Typography variant="subtitle1" style={{ marginBottom: "2rem" }}>We’re on a mission to grow the coolest film collection in the world, and we can’t do it without an amazing community. If you’re interested in contributing to Solfilm and earning some SOL, leave your email below!</Typography>
 
       <Box

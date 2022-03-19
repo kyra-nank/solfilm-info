@@ -28,18 +28,18 @@ const Header = function () {
   return (
     <div>
       <AppBar position="static" sx={{
-        bgcolor: "#fff"
+        bgcolor: "#180400"
       }}>
         <Container maxWidth="xl" >
 
-          <Toolbar disableGutters >
+          <Toolbar disableGutters>
             <Typography
               variant="h6"
               noWrap
               component="div"
               sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
             >
-              <img style={{ height: "50px" }} src={require("../assets/logo-no-paddingX.png")} alt="logo" />
+              <img style={{ height: "50px" }} src={require("../assets/logo-no-paddingX-light.png")} alt="logo" />
 
             </Typography>
 
@@ -52,7 +52,7 @@ const Header = function () {
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
-                sx={{ color: "#000" }}
+                sx={{ color: "#F5DABB" }}
               >
                 <MenuIcon />
               </IconButton>
@@ -74,11 +74,12 @@ const Header = function () {
                 onClose={handleCloseNavMenu}
                 sx={{
                   display: { xs: 'block', md: 'none' },
+                  alignItems: "left"
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Button sx={{ color: "#00C2CB" }} disableFocusRipple={true} disableRipple={true} href={`#${page.toLowerCase()}`} >{page}</Button>
+                  <MenuItem key={page} onClick={handleCloseNavMenu} > 
+                    <Button style={{justifyContent: "flex-start"}} sx={{ color: "#180400" }} disableFocusRipple={true} disableRipple={true} href={`#${page.toLowerCase()}`} >{page}</Button>
                   </MenuItem>
                 ))}
 
@@ -92,7 +93,7 @@ const Header = function () {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
             >
-              <img style={{ height: "50px" }} src={require("../assets/logo-no-paddingX.png")} alt="logo" />
+              <img style={{ height: "50px" }} src={require("../assets/logo-no-paddingX-light.png")} alt="logo" />
             </Typography>
 
 
@@ -103,7 +104,7 @@ const Header = function () {
                   key={page}
                   href={`#${page.toLowerCase()}`}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: 'black', display: 'block' }}
+                  sx={{ my: 2, color: '#F5DABB', display: 'block', "&:hover": { color: "#FFF" }}}
                 >
                   {page}
                 </Button>
@@ -112,7 +113,7 @@ const Header = function () {
 
 
             <Box sx={{ flexGrow: 0 }}>
-              <SocialLinks />
+              <SocialLinks isLight={true}/>
             </Box>
 
           </Toolbar>

@@ -5,7 +5,7 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-
+import Typography from '@mui/material/Typography';
 
 export default function AlternateTimeline() {
 
@@ -14,58 +14,107 @@ export default function AlternateTimeline() {
     <Timeline position="alternate">
 
       <TimelineItem>
-        <TimelineSeparator >
-          <TimelineDot color="primary" />
+        <TimelineSeparator>
+          <TimelineDot style={{height: "1rem", width: "1rem", justifyContent: "center", backgroundColor: "#FFF"}}>
+            <p style={{alignSelf: "center", color: "#180400"}}>1</p>
+          </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Reveal strips</TimelineContent>
+        <TimelineContent>
+          <Typography component="span" sx={{color: "#FFF", fontSize: "1.2rem"}}>
+            Reveal Strips
+          </Typography>
+          <Typography sx={{fontSize: "0.9rem"}}>Strips will be posted on the website.</Typography>
+        </TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineDot color="primary" />
+        <TimelineDot style={{height: "1rem", width: "1rem", justifyContent: "center", backgroundColor: "#FFF"}}>
+            <p style={{alignSelf: "center", color: "#180400"}}>2</p>
+          </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Mint <br /> "Solfilm ISO 001"</TimelineContent>
+        <TimelineContent>
+          <Typography component="span" sx={{color: "#FFF", fontSize: "1.2rem"}}>
+            Reveal Strips
+          </Typography>
+          <Typography sx={{fontSize: "0.9rem"}}>Strips will be posted on the website.</Typography>
+        </TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineDot color="primary" />
+        <TimelineDot style={{height: "1rem", width: "1rem", justifyContent: "center", backgroundColor: "#FFF"}}>
+            <p style={{alignSelf: "center", color: "#180400"}}>3</p>
+          </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>DAO wallet</TimelineContent>
+        <TimelineContent>
+          <Typography component="span" sx={{color: "#FFF", fontSize: "1.2rem"}}>
+            Reveal Strips
+          </Typography>
+          <Typography sx={{fontSize: "0.9rem"}}>Strips will be posted on the website.</Typography>
+        </TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineDot color="primary" />
+        <TimelineDot style={{height: "1rem", width: "1rem", justifyContent: "center", backgroundColor: "#FFF"}}>
+            <p style={{alignSelf: "center", color: "#180400"}}>4</p>
+          </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Giveaway</TimelineContent>
+        <TimelineContent>
+          <Typography component="span" sx={{color: "#FFF", fontSize: "1.2rem"}}>
+            Reveal Strips
+          </Typography>
+          <Typography sx={{fontSize: "0.9rem"}}>Strips will be posted on the website.</Typography>
+        </TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineDot color="primary" />
+        <TimelineDot style={{height: "1rem", width: "1rem", justifyContent: "center", backgroundColor: "#FFF"}}>
+            <p style={{alignSelf: "center", color: "#180400"}}>5</p>
+          </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Strip owners can <br /> develop photos</TimelineContent>
+        <TimelineContent>
+          <Typography component="span" sx={{color: "#FFF", fontSize: "1.2rem"}}>
+            Reveal Strips
+          </Typography>
+          <Typography sx={{fontSize: "0.9rem"}}>Strips will be posted on the website.</Typography>
+        </TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineDot color="primary" />
+        <TimelineDot style={{height: "1rem", width: "1rem", justifyContent: "center", backgroundColor: "#FFF"}}>
+            <p style={{alignSelf: "center", color: "#180400"}}>6</p>
+          </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Community collection</TimelineContent>
+        <TimelineContent>
+          <Typography component="span" sx={{color: "#FFF", fontSize: "1.2rem"}}>
+            Reveal Strips
+          </Typography>
+          <Typography sx={{fontSize: "0.9rem"}}>Strips will be posted on the website.</Typography>
+        </TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineDot color="primary" />
+        <TimelineDot style={{height: "1rem", width: "1rem", justifyContent: "center", backgroundColor: "#FFF"}}>
+            <p style={{alignSelf: "center", color: "#180400"}}>7</p>
+          </TimelineDot>
         </TimelineSeparator>
-        <TimelineContent><strong>Roadmap 2.0</strong></TimelineContent>
+        <TimelineContent>
+          <Typography component="span" sx={{color: "#FFF", fontSize: "1.2rem"}}>
+            Reveal Strips
+          </Typography>
+          <Typography sx={{fontSize: "0.9rem"}}>Strips will be posted on the website.</Typography>
+        </TimelineContent>
       </TimelineItem>
 
 

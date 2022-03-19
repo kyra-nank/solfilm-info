@@ -4,26 +4,26 @@ import Typography from '@mui/material/Typography';
 
 const TraitRarity = function ({ trait }) {
 
-  const [textColor, setTextColor] = useState("#000");
+  const [textColor, setTextColor] = useState("#180400");
   const [text, setText] = useState(trait.type);
-  const [bgColor, setBgColor] = useState("#D3D3D3");
+  const [bgColor, setBgColor] = useState("#F5DABB");
 
   const handleMouseEnter = function () {
     setText(trait.rarity);
-    setBgColor("#00C2CB");
-    setTextColor("#fff");
+    setBgColor("#FFF");
+    // setTextColor("#fff");
   };
 
   const handleMouseLeave = function () {
     setText(trait.type);
-    setBgColor("#D3D3D3");
-    setTextColor("#000");
+    setBgColor("#F5DABB");
+    setTextColor("#180400");
   };
 
   return (
     <Paper
       elevation={1}
-      style={{ backgroundColor: `${bgColor}`, color: `${textColor}`, width: "150px", margin: "5px" }}
+      style={{ backgroundColor: `${bgColor}`, color: `${textColor}`, width: "150px", margin: "5px 0 5px 0" }}
       onMouseEnter={() => { handleMouseEnter(); }}
       onMouseLeave={() => { handleMouseLeave(); }}
     >

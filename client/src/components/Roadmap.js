@@ -5,9 +5,9 @@ import AlternateTimeline from './AlternateTimeline';
 
 const Roadmap = function () {
   return (
-    <section id="roadmap" style={{ scrollMarginTop: "3rem", marginTop: "10rem" }}>
-      <Box style={{ marginTop: "5rem" }}>
-        <Typography style={{ marginBottom: "2rem" }} variant="h4">Roadmap &#128640;</Typography>
+    <section id="roadmap">
+      <Box style={{ paddingTop: "5rem", paddingBottom: "5rem"  }}>
+        <Typography style={{ marginBottom: "2rem", color: "#FFF" }} variant="h5">ROADMAP &#128640;</Typography>
         <AlternateTimeline />
       </Box>
     </section>
