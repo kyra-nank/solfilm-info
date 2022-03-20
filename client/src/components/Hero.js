@@ -1,4 +1,4 @@
-import Reacts  from 'react';
+import React  from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
@@ -12,7 +12,7 @@ const Hero = function () {
       </Box>
       <video style={styles.videoStyle} autoPlay loop muted>
         <source
-          src={require("../assets/hero-background.mp4")}
+          src="https://s3.us-east-2.amazonaws.com/solfilm.io/hero-background.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.

@@ -15,7 +15,7 @@ const Mint = function () {
         <Grid container spacing={5} alignItems="center" justifyContent="center" sx={{paddingTop: "2rem"}}>
           
           <Grid item xs={12} md={6} align="center">
-            <img alt="mint collection" style={{ maxHeight: "20rem", maxWidth: "98%", height: "auto", width: "auto" }} src={require("../assets/preview.gif")} />
+            <img alt="mint collection" style={{ maxHeight: "20rem", maxWidth: "98%", height: "auto", width: "auto" }} src="https://s3.us-east-2.amazonaws.com/solfilm.io/preview.gif" />
           </Grid>
           
           <Grid item xs={12} md={6} align="center">

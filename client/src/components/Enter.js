@@ -7,7 +7,7 @@ import SocialLinks from './SocialLinks';
 const Enter = function () {
   return (
     <div style={styles.containerStyle}>
-      <img src={require("../assets/retro-light-logo.png")} alt="logo" style={{ height: "100px", display: "flex" }} />
+      <img src="https://s3.us-east-2.amazonaws.com/solfilm.io/retro-light-logo.png" alt="logo" style={{ height: "100px", display: "flex" }} />
       <Link style={{ textDecoration: "none", padding: "20px"}} to="/home"><Button style={styles.buttonStyle} variant="contained">Enter</Button></Link>
       <SocialLinks isLight={true}/>
       <video style={styles.videoStyle} autoPlay loop muted>

@@ -24,7 +24,7 @@ const Overview = function () {
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
-          <img alt="film fade" style={{ maxHeight: "20rem", maxWidth: "95%", height: "auto", width: "auto" }} src={require("../assets/KN-Film.gif")} />
+          <img alt="film fade" style={{ maxHeight: "20rem", maxWidth: "95%", height: "auto", width: "auto" }} src="https://s3.us-east-2.amazonaws.com/solfilm.io/KN-Film.gif" />
           <Typography sx={{fontSize: "0.75rem", opacity: "0.6", marginTop: "0.5rem"}}>* Illustration of film development, Solfilm ISO 001</Typography>
         </Grid>
       </Grid>

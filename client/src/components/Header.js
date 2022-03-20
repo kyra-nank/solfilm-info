@@ -39,7 +39,7 @@ const Header = function () {
               component="div"
               sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
             >
-              <img style={{ height: "50px" }} src={require("../assets/logo-no-paddingX-light.png")} alt="logo" />
+              <img style={{ height: "50px" }} src="https://s3.us-east-2.amazonaws.com/solfilm.io/logo-no-paddingX-light.png" alt="logo" />
 
             </Typography>
 
@@ -93,7 +93,7 @@ const Header = function () {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
             >
-              <img style={{ height: "50px" }} src={require("../assets/logo-no-paddingX-light.png")} alt="logo" />
+              <img style={{ height: "50px" }} src="https://s3.us-east-2.amazonaws.com/solfilm.io/logo-no-paddingX-light.png" alt="logo" />
             </Typography>
 
 
