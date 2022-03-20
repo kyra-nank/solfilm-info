@@ -11,7 +11,7 @@ export default function AlternateTimeline() {
 
   return (
 
-    <Timeline position="alternate">
+    <Timeline position="alternate" sx={{padding: "0"}}>
 
       <TimelineItem>
         <TimelineSeparator>
