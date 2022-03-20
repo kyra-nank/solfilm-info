@@ -22,7 +22,7 @@ const Footer = () => {
             component="div"
             sx={{ mr: 2, display: { xs: 'flex', md: 'flex' } }}
           >
-            <img style={{ height: "35px" }} src="https://s3.us-east-2.amazonaws.com/solfilm.io/logo-no-paddingX-light.png" alt="logo" />
+            <img style={{ height: "35px" }} src="https://d3f9hpbghq9tuf.cloudfront.net/logo-no-paddingX-light.png" alt="logo" />
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' } }} style={{ justifyContent: "center" }}>

@@ -16,7 +16,7 @@ const About = function () {
           We aim to share this magical experience with owners and photographers worldwide for years to come.
           Welcome to our growing community.
         </Typography>
-        <img alt="film strip" style={{ maxWidth: "100%", maxHeight: "500px", width: "auto", height: "auto", marginTop: "4rem" }} src="https://s3.us-east-2.amazonaws.com/solfilm.io/home-strip.png" />
+        <img alt="film strip" style={{ maxWidth: "100%", maxHeight: "500px", width: "auto", height: "auto", marginTop: "4rem" }} src="https://d3f9hpbghq9tuf.cloudfront.net/home-strip.png" />
         <Typography sx={{fontSize: "0.75rem", opacity: "0.6", marginTop: "0.5rem"}}>* Niagara Falls 1980s, Solfilm ISO 001</Typography>
       </Box>
     </section>

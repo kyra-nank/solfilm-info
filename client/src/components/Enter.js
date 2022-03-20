@@ -7,12 +7,12 @@ import SocialLinks from './SocialLinks';
 const Enter = function () {
   return (
     <div style={styles.containerStyle}>
-      <img src="https://s3.us-east-2.amazonaws.com/solfilm.io/retro-light-logo.png" alt="logo" style={{ height: "100px", display: "flex" }} />
+      <img src="https://d3f9hpbghq9tuf.cloudfront.net/retro-light-logo.png" alt="logo" style={{ height: "100px", display: "flex" }} />
       <Link style={{ textDecoration: "none", padding: "20px"}} to="/home"><Button style={styles.buttonStyle} variant="contained">Enter</Button></Link>
       <SocialLinks isLight={true}/>
       <video style={styles.videoStyle} autoPlay loop muted>
         <source
-          src="https://s3.us-east-2.amazonaws.com/solfilm.io/entry-background.mp4"
+          src="https://d3f9hpbghq9tuf.cloudfront.net/entry-background.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.

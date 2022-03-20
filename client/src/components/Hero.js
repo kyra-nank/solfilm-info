@@ -12,7 +12,7 @@ const Hero = function () {
       </Box>
       <video style={styles.videoStyle} autoPlay loop muted>
         <source
-          src="https://s3.us-east-2.amazonaws.com/solfilm.io/hero-background.mp4"
+          src="https://d3f9hpbghq9tuf.cloudfront.net/hero-background.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
@@ -31,7 +31,7 @@ const styles = {
     height: "86vh",
     backgroundColor: "transparent",
     margin: "0",
-    cursor: "url('https://s3.us-east-2.amazonaws.com/solfilm.io/camera-cursor.png'), auto"
+    cursor: "url('https://d3f9hpbghq9tuf.cloudfront.net/camera-cursor.png'), auto"
   },
   videoStyle: {
     opacity: "0.5",
