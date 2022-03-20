@@ -12,13 +12,13 @@ const Overview = function () {
         <Grid item xs={12} md={6}>
           <Typography variant="subtitle1">
             <ul>
-              <li>Mint a unique negative photo from our collection</li>
-              <li>Buy, sell or hold in the negative market</li>
-              <li>Collect a film strip to unlock positives</li>
-              <li>Redeem your complete strip to receive NFT positives</li>
-              <li>Enjoy the evolution of your NFTs in full colour/b&w</li>
-              <li>Buy, sell or hold in the exclusive positive market</li>
-              <li>Order physical copies or a keychain album of your collection</li>
+              <li>Mint unique film NFTs</li>
+              <li>Buy, sell or hold in the market</li>
+              <li>Collect a complete film strip for rewards</li>
+              <li>Acquire C-41 chemical packs (coming soon)</li>
+              <li>Develop negatives with chemicals to reveal full colour photos</li>
+              <li>Enjoy exclusive rights and perks as a developed film holder</li>
+              <li>Order physical prints, albums or posters featuring your NFTs</li>
               <li>Contribute your film photos and earn SOL (coming soon)</li>
             </ul>
           </Typography>
