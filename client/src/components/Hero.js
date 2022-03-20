@@ -6,7 +6,10 @@ const Hero = function () {
 
   return (
     <Box style={styles.containerStyle}>
-      <Typography style={{zIndex: "1", position: "absolute", color:"#FFF"}} align="center" variant="h4"><strong>Develop Film on Solana</strong></Typography>
+      <Box style={{zIndex: "1", position: "absolute"}}> 
+      <Typography style={{color:"#FFF"}} align="center" variant="h4"><strong>Reveal the Story</strong></Typography>
+      <Typography style={{color:"#FFF"}} align="center" variant="subtitle1">Develop Film on Solana</Typography>
+      </Box>
       <video style={styles.videoStyle} autoPlay loop muted>
         <source
           src={require("../assets/hero-background.mp4")}
