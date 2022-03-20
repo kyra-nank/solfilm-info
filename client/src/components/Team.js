@@ -12,7 +12,7 @@ const Team = function () {
         <Grid container spacing={5} sx={{paddingTop: "2rem"}}>
           
           <Grid item xs={12} md={6} align="center">
-            <img alt="kn pic" style={{ height: "auto", maxWidth: "98%", width: "auto", maxHeight: "20rem"}} src={require("../assets/kyra-headshot3.jpg")} />
+            <img alt="kn pic" style={{ height: "auto", maxWidth: "98%", width: "auto", maxHeight: "20rem"}} src={require("../assets/kyra-headshot2.png")} />
             
             <Box sx={{paddingTop: "2rem"}}>
             <Typography sx={{color: "#FFF"}} align="center" variant="h5"><em>polumathes</em></Typography>
@@ -22,7 +22,7 @@ const Team = function () {
           </Grid>
 
           <Grid item xs={12} md={6} align="center">
-            <img alt="am pic" style={{ height: "auto", maxWidth: "98%", width: "auto", maxHeight: "20rem"}} src={require("../assets/alejandro-headshot.jpg")} />
+            <img alt="am pic" style={{ height: "auto", maxWidth: "98%", width: "auto", maxHeight: "20rem"}} src={require("../assets/alejandro-headshot2.png")} />
             
             <Box sx={{paddingTop: "2rem"}}>
             <Typography sx={{color: "#FFF"}} align="center" variant="h5"><em>blvckjupiter</em></Typography>
