@@ -6,8 +6,33 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import FormControl from '@mui/material/FormControl';
-import InputLabel from '@mui/material/InputLabel';
-import OutlinedInput from '@mui/material/OutlinedInput';
+import TextField from '@mui/material/TextField';
+
+import { styled } from '@mui/material/styles';
+
+const CssTextField = styled(TextField)({
+  '& label.Mui-focused': {
+    color: '#FFF',
+  },
+  'label': {
+    color: '#F5DABB',
+  },
+  '& .MuiInput-underline:after': {
+    borderBottomColor: '#FFF',
+  },
+  '& .MuiOutlinedInput-root': {
+    '& fieldset': {
+      borderColor: '#F5DABB',
+    },
+    '&:hover fieldset': {
+      borderColor: '#FFF',
+    },
+    '&.Mui-focused fieldset': {
+      borderColor: '#FFF',
+    },
+  },
+});
+
 
 const Join = function ({ submitEmail, status }) {
 
@@ -30,7 +55,6 @@ const Join = function ({ submitEmail, status }) {
       return null;
     }
 
-
   };
 
   return (
@@ -47,13 +71,12 @@ const Join = function ({ submitEmail, status }) {
         <Grid container display="flex" style={{ margin: "0", padding: "0" }}>
           <Grid item xs={12} md={9} style={{ margin: "0", padding: "0" }}>
             <FormControl style={{ width: "98%", height: "100%" }}>
-              <InputLabel htmlFor="component-outlined">Email</InputLabel>
-              <OutlinedInput
-                id="component-outlined"
+              <CssTextField 
+                sx={{ input: { color: '#FFF' } }}
                 value={email}
                 onChange={handleChange}
                 label="Email"
-
+                id="custom-css-outlined-input"
               />
             </FormControl>
           </Grid>
@@ -70,7 +93,6 @@ const Join = function ({ submitEmail, status }) {
 
         {statusMessage()}
 
-
       </Box>
     </Box>
 
@@ -80,8 +102,8 @@ const Join = function ({ submitEmail, status }) {
 const styles = {
   buttonStyle: {
     width: "98%",
-    backgroundColor: "#00C2CB",
-    color: "black",
+    backgroundColor: "#F5DABB",
+    color: "#180400",
     margin: "0",
     padding: "0",
     height: "100%",

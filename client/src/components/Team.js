@@ -5,20 +5,31 @@ import Box from '@mui/material/Box';
 
 const Team = function () {
   return (
-    <section id="team" style={{ scrollMarginTop: "3rem", margin: "8rem 0 10rem 0" }}>
-      <Box style={{ paddingBottom: "2rem" }}>
+    <section id="team">
+      <Box style={{ paddingTop: "5rem", paddingBottom: "5rem" }}>
         <Typography variant="h5" style={{ marginBottom: "2rem", color: "#FFF" }}>OUR TEAM &#128075;</Typography>
-        <Grid container spacing={5}>
+        
+        <Grid container spacing={5} sx={{paddingTop: "2rem"}}>
+          
           <Grid item xs={12} md={6} align="center">
-            <img alt="kn pic" style={{ height: "auto", maxWidth: "98%", width: "auto", maxHeight: "20rem", marginBottom: "1rem", padding: "3rem 0 3rem 0" }} src={require("../assets/kyra-headshot3.jpg")} />
-            <Typography align="center" variant="h5">polumathes</Typography>
+            <img alt="kn pic" style={{ height: "auto", maxWidth: "98%", width: "auto", maxHeight: "20rem"}} src={require("../assets/kyra-headshot3.jpg")} />
+            
+            <Box sx={{paddingTop: "2rem"}}>
+            <Typography sx={{color: "#FFF"}} align="center" variant="h5"><em>polumathes</em></Typography>
             <Typography align="center" variant="h6">Developer</Typography>
+            </Box>
+            
           </Grid>
+
           <Grid item xs={12} md={6} align="center">
-            <img alt="am pic" style={{ height: "auto", maxWidth: "98%", width: "auto", maxHeight: "20rem", marginBottom: "1rem", padding: "3rem 0 3rem 0" }} src={require("../assets/alejandro-headshot.jpg")} />
-            <Typography align="center" variant="h5">blvckjupiter</Typography>
+            <img alt="am pic" style={{ height: "auto", maxWidth: "98%", width: "auto", maxHeight: "20rem"}} src={require("../assets/alejandro-headshot.jpg")} />
+            
+            <Box sx={{paddingTop: "2rem"}}>
+            <Typography sx={{color: "#FFF"}} align="center" variant="h5"><em>blvckjupiter</em></Typography>
             <Typography align="center" variant="h6">Photographer</Typography>
+            </Box>
           </Grid>
+
         </Grid>
       </Box>
     </section>
