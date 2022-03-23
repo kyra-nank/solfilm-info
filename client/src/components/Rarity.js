@@ -61,7 +61,7 @@ const Rarity = function () {
           Each photo captures a unique moment in time and rarity is related to the physical camera setup. 
           These characteristics include the type of film, the number of photos on the strip, 
           the scenery, the photo number on the film roll, and the camera’s sensitivity to light. 
-          Our first collection, Solfilm ISO 001, includes 373 photos taken between 1980 and 
+          Our first collection, Solfilm ISO 001, includes 345 photos taken between 1980 and 
           2022 in a variety of environments.
         </Typography>
         {renderGrid()}
