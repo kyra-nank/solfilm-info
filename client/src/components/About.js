@@ -12,7 +12,7 @@ const About = function () {
           Minting a Solfilm NFT is the beginning of a rewarding experience. 
           You will be granted a 35mm negative photo, providing a glimpse of the full moment captured on film. 
           To reveal this moment in its entirety Solfilm will release C-41 chemical packs. 
-          When your NFTs are treated with these chemicals the true colour/b&w image will be revealed! 
+          When your NFTs are treated with these chemicals the true colour image is revealed! 
           We aim to share this magical experience with owners and photographers worldwide for years to come.
           Welcome to our growing community.
         </Typography>
