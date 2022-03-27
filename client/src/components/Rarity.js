@@ -12,39 +12,39 @@ const Rarity = function () {
       <Grid container spacing={3}>
         <Grid item>
           <Typography sx={{color: "#FFF"}} variant="subtitle1"><strong>Type</strong></Typography>
-          <TraitRarity trait={{ type: "Coloured", rarity: "88.3%" }} />
-          <TraitRarity trait={{ type: "B&W", rarity: "11.7%" }} />
+          <TraitRarity trait={{ type: "Coloured", rarity: "80.6%" }} />
+          <TraitRarity trait={{ type: "B&W", rarity: "19.4%" }} />
         </Grid>
         <Grid item>
           <Typography sx={{color: "#FFF"}} variant="subtitle1"><strong>Strip Length</strong></Typography>
-          <TraitRarity trait={{ type: "1", rarity: "0.4%" }} />
-          <TraitRarity trait={{ type: "2", rarity: "6.7%" }} />
-          <TraitRarity trait={{ type: "3", rarity: "13.8%" }} />
-          <TraitRarity trait={{ type: "4", rarity: "43.5%" }} />
-          <TraitRarity trait={{ type: "5", rarity: "35.6%" }} />
+          <TraitRarity trait={{ type: "1", rarity: "0.3%" }} />
+          <TraitRarity trait={{ type: "2", rarity: "5.8%" }} />
+          <TraitRarity trait={{ type: "3", rarity: "10.4%" }} />
+          <TraitRarity trait={{ type: "4", rarity: "31.3%" }} />
+          <TraitRarity trait={{ type: "5", rarity: "52.2%" }} />
         </Grid>
         <Grid item>
           <Typography sx={{color: "#FFF"}} variant="subtitle1"><strong>Scenery</strong></Typography>
-          <TraitRarity trait={{ type: "Urban", rarity: "27.6%" }} />
-          <TraitRarity trait={{ type: "People", rarity: "12.1%" }} />
-          <TraitRarity trait={{ type: "Nature", rarity: "12.1%" }} />
-          <TraitRarity trait={{ type: "Vehicles", rarity: "46.0%" }} />
-          <TraitRarity trait={{ type: "Burned", rarity: "1.7%" }} />
-          <TraitRarity trait={{ type: "Unknown", rarity: "1.7%" }} />
+          <TraitRarity trait={{ type: "Urban", rarity: "36.8%" }} />
+          <TraitRarity trait={{ type: "People", rarity: "8.7%" }} />
+          <TraitRarity trait={{ type: "Nature", rarity: "12.2%" }} />
+          <TraitRarity trait={{ type: "Vehicles", rarity: "31.9%" }} />
+          <TraitRarity trait={{ type: "Burned", rarity: "10.4%" }} />
+          <TraitRarity trait={{ type: "Unknown", rarity: "0%" }} />
         </Grid>
         <Grid item>
           <Typography sx={{color: "#FFF"}} variant="subtitle1"><strong>Number</strong></Typography>
-          <TraitRarity trait={{ type: "0-24", rarity: "92.9%" }} />
-          <TraitRarity trait={{ type: "25-36", rarity: "5.4%" }} />
-          <TraitRarity trait={{ type: "Unknown", rarity: "1.7%" }} />
+          <TraitRarity trait={{ type: "0-24", rarity: "80.9%" }} />
+          <TraitRarity trait={{ type: "25-36", rarity: "7.8%" }} />
+          <TraitRarity trait={{ type: "Unknown", rarity: "11.3%" }} />
         </Grid>
         <Grid item>
           <Typography sx={{color: "#FFF"}} variant="subtitle1"><strong>ISO</strong></Typography>
-          <TraitRarity trait={{ type: "100", rarity: "20.9%" }} />
-          <TraitRarity trait={{ type: "200", rarity: "28.0%" }} />
-          <TraitRarity trait={{ type: "400", rarity: "39.2%" }} />
-          <TraitRarity trait={{ type: "1000", rarity: "7.1%" }} />
-          <TraitRarity trait={{ type: "Unknown", rarity: "4.6%" }} />
+          <TraitRarity trait={{ type: "100", rarity: "14.5%" }} />
+          <TraitRarity trait={{ type: "200", rarity: "20.9%" }} />
+          <TraitRarity trait={{ type: "400", rarity: "45.8%" }} />
+          <TraitRarity trait={{ type: "1000", rarity: "4.9%" }} />
+          <TraitRarity trait={{ type: "Unknown", rarity: "13.9%" }} />
         </Grid>
       </Grid>
     );
@@ -65,7 +65,7 @@ const Rarity = function () {
           2022 in a variety of environments.
         </Typography>
         {renderGrid()}
-        <Typography sx={{fontSize: "0.75rem", opacity: "0.6", marginTop: "0.5rem"}}>* To be updated</Typography>
+        {/* <Typography sx={{fontSize: "0.75rem", opacity: "0.6", marginTop: "0.5rem"}}>* To be updated</Typography> */}
       </Box>
     </section>
   );

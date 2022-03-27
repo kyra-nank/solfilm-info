@@ -43,7 +43,7 @@ export default function AlternateTimeline() {
           </Typography>
           <Typography sx={{fontSize: "0.9rem"}}>
             Our first collection of negatives will be available 
-            for mint on April 18th 2022.
+            for mint on April 2022.
           </Typography>
         </TimelineContent>
       </TimelineItem>
