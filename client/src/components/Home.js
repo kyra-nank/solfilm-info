@@ -10,15 +10,15 @@ import Overview from './Overview';
 import Mint from './Mint';
 import Join from './Join';
 import Footer from './Footer';
-import Divider from './Divider'
+import Divider from './Divider';
 
 // gradient background: "linear-gradient(20deg, #ffffff, rgba(92,225,230,0.25), #ffffff, rgba(92,225,230,0.25), #ffffff)" 
 
 const Home = function () {
   return (
-    <div style={{backgroundColor: "#180400", color: "#F5DABB"}}>
+    <div style={{ backgroundColor: "#180400", color: "#F5DABB" }}>
       <Header />
-      <Divider/>
+      <Divider />
       <Container maxWidth="xl" style={{ padding: "0 3rem 0 3rem" }}>
         <Hero />
         <Divider />
@@ -36,7 +36,7 @@ const Home = function () {
         <Divider />
         <Join />
       </Container>
-      <Divider/>
+      <Divider />
       <Footer />
     </div>
   );
