@@ -10,6 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import SocialLinks from './SocialLinks';
+import Blackpaper from './Blackpaper';
 import { Link } from 'react-router-dom';
 
 
@@ -105,7 +106,7 @@ const Header = function () {
 
                 )}
                 <Link style={{ textDecoration: "none" }} to="/strips"><MenuItem><Button disableRipple disableFocusRipple sx={{ color: "#180400" }} style={{ justifyContent: "flex-start" }}>Strips</Button></MenuItem></Link>
-
+                <Blackpaper />
               </Menu>
 
             </Box>
@@ -123,7 +124,7 @@ const Header = function () {
 
 
             {/* HORIZONTAL MENU */}
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <Box textAlign='center' sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => {
                 let navLink;
                 if (window.location.pathname === '/home') {
@@ -144,8 +145,12 @@ const Header = function () {
               }
               )}
               <Link style={{ textDecoration: "none" }} to="/strips"><Button disableRipple disableFocusRipple sx={styles.buttonStyle}>Strips</Button></Link>
+
             </Box>
 
+            <Box justifyContent='flex-end' sx={{ paddingRight: '8px', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+              <Blackpaper />
+            </Box>
 
             <Box sx={{ flexGrow: 0 }}>
               <SocialLinks isLight={true} />
