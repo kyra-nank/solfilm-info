@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Button } from '@mui/material';
 
-import Pdf from '../assets/blackpaper.pdf';
+// import Pdf from '../assets/blackpaper.pdf';
+
+const Pdf = 'https://d3f9hpbghq9tuf.cloudfront.net/solfilm-blackpaper-v1.pdf';
 
 
 class Blackpaper extends Component {
