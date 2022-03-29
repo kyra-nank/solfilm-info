@@ -7,12 +7,50 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import InputBase from '@mui/material/InputBase';
+import NativeSelect from '@mui/material/NativeSelect';
+
+import { styled } from '@mui/material/styles';
+
 import Header from './Header';
 import Divider from './Divider';
 import Footer from './Footer';
 
 // import data
 import Data from '../Data';
+
+const BootstrapInput = styled(InputBase)(({ theme }) => ({
+  '& .MuiFormLabel-root-MuiInputLabel-root': {
+    color: '#F5DABB'
+  },
+  '& .MuiNativeSelect-iconStandard': {
+    color: '#F5DABB',
+    '&:hover': {
+      color: '#FFF',
+    }
+  },
+  'label + &': {
+    marginTop: theme.spacing(3),
+    color: '#F5DABB'
+  },
+  '& label': {
+    marginTop: theme.spacing(3)
+  },
+  '& .MuiInputBase-input': {
+    borderRadius: 4,
+    position: 'relative',
+    border: '1px solid #F5DABB',
+    padding: '10px 26px 10px 12px',
+    '&:focus': {
+      borderRadius: 4,
+      borderColor: '#FFF',
+    },
+    '&:hover': {
+      borderColor: '#FFF',
+    }
+  },
+}));
+
 
 const Strips = function () {
 
@@ -118,65 +156,74 @@ const Strips = function () {
   // render selectors
   const renderSelectors = () => {
     return (
-      <Grid container alignItems="center" justifyContent="center" spacing={3} sx={{ p: "30px" }}>
+      <Grid container alignItems="center" justifyContent="center" >
 
-        <Grid item xs={12} md={4} >
-          <FormControl>
-            <InputLabel id="type-label">Type</InputLabel>
-            <Select
+        <Grid item xs={12} md={4} sx={{ paddingBottom: "2.5rem" }} >
+          <FormControl sx={{ m: "1 1 1 0" }} variant="standard">
+            <InputLabel sx={{
+              "&:hover": { color: "#FFF" },
+              "&.Mui-focused": { color: "#FFF" },
+              color: '#FFF'
+            }} htmlFor="type-select">Type</InputLabel>
+            <NativeSelect
               sx={{ width: "200px" }}
-              labelId="type-label"
               id="type-select"
               value={type}
-              label="Type"
               onChange={handleTypeChange}
+              input={<BootstrapInput />}
             >
-              <MenuItem value="All">All</MenuItem>
-              <MenuItem value="Colour">Colour</MenuItem>
-              <MenuItem value="Black & White">Black & White</MenuItem>
-            </Select>
+              <option value="All">All</option>
+              <option value="Colour">Colour</option>
+              <option value="Black & White">Black & White</option>
+            </NativeSelect>
           </FormControl>
         </Grid>
 
-        <Grid item xs={12} md={4}>
-          <FormControl>
-            <InputLabel id="length-label">Strip Length</InputLabel>
-            <Select
+        <Grid item xs={12} md={4} sx={{ paddingBottom: "2.5rem" }}>
+          <FormControl sx={{ m: "1 1 1 0" }} variant="standard">
+            <InputLabel sx={{
+              "&:hover": { color: "#FFF" },
+              "&.Mui-focused": { color: "#FFF" },
+              color: '#FFF'
+            }} htmlFor="length-select">Strip Length</InputLabel>
+            <NativeSelect
               sx={{ width: "200px" }}
-              labelId="length-label"
               id="length-select"
               value={length}
-              label="Strip Length"
               onChange={handleLengthChange}
+              input={<BootstrapInput />}
             >
-              <MenuItem value="All">All</MenuItem>
-              <MenuItem value="1">1</MenuItem>
-              <MenuItem value="2">2</MenuItem>
-              <MenuItem value="3">3</MenuItem>
-              <MenuItem value="4">4</MenuItem>
-              <MenuItem value="5">5</MenuItem>
-            </Select>
+              <option value="All">All</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </NativeSelect>
           </FormControl>
         </Grid>
 
-        <Grid item xs={12} md={4}>
-          <FormControl>
-            <InputLabel id="iso-label">ISO</InputLabel>
-            <Select
+        <Grid item xs={12} md={4} sx={{ paddingBottom: "2.5rem" }}>
+          <FormControl sx={{ m: "1 1 1 0" }} variant="standard">
+            <InputLabel sx={{
+              "&:hover": { color: "#FFF" },
+              "&.Mui-focused": { color: "#FFF" },
+              color: '#FFF'
+            }} htmlFor="iso-select">ISO</InputLabel>
+            <NativeSelect
               sx={{ width: "200px" }}
-              labelId="iso-label"
               id="iso-select"
               value={iso}
-              label="ISO"
               onChange={handleIsoChange}
+              input={<BootstrapInput />}
             >
-              <MenuItem value="All">All</MenuItem>
-              <MenuItem value="100">100</MenuItem>
-              <MenuItem value="200">200</MenuItem>
-              <MenuItem value="400">400</MenuItem>
-              <MenuItem value="1000">1000</MenuItem>
-              <MenuItem value="Unknown">Unknown</MenuItem>
-            </Select>
+              <option value="All">All</option>
+              <option value="100">100</option>
+              <option value="200">200</option>
+              <option value="400">400</option>
+              <option value="1000">1000</option>
+              <option value="Unknown">Unknown</option>
+            </NativeSelect>
           </FormControl>
         </Grid>
 
@@ -185,25 +232,29 @@ const Strips = function () {
   };
 
 
-  // for div when done
-  // style={{ backgroundColor: "#180400", color: "#F5DABB" }}
+
   return (
     <div style={{ backgroundColor: "#180400", color: "#F5DABB" }}>
       <Header />
       <Divider />
-      <Container maxWidth="xl" style={{ padding: "0 3rem 0 3rem" }}>
-        <Box style={{ paddingTop: "5rem", paddingBottom: "5rem" }}>
+      <Container
+        maxWidth="xl"
+        style={{ padding: "0 3rem 0 3rem" }
+        }>
+        <Box style={{ paddingTop: "5rem", paddingBottom: "2.5rem" }}>
           {/* message */}
-          <Box>
-            <Typography variant="h5" style={{ marginBottom: "2rem", color: "#FFF" }}>SOLFILM ISO 001</Typography>
-            {percentage !== null
+          <Box style={{ marginBottom: "3rem" }}>
+            <Typography variant="h5" style={{ marginBottom: "1rem", color: "#FFF" }}>SOLFILM STRIPS</Typography>
+            {/* {percentage !== null
               ? <Typography variant="subtitle1">{percentage}% of strips are of {filterCategory} {filterValue}</Typography>
               : null
-            }
+            } */}
+            <Typography variant="subtitle1">The following strips belong to the Solfilm ISO 001 collection.</Typography>
           </Box>
 
           {/* render selectors */}
           {renderSelectors()}
+          <Typography sx={{ fontSize: "0.75rem", opacity: "0.6", my: "0.5rem", alignSelf: "center" }}>* Resolution lowered for faster loading</Typography>
 
           {/* render strips */}
           <Grid container spacing={1}>
