@@ -4,9 +4,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
 import InputBase from '@mui/material/InputBase';
 import NativeSelect from '@mui/material/NativeSelect';
 
@@ -254,7 +252,7 @@ const Strips = function () {
 
           {/* render selectors */}
           {renderSelectors()}
-          <Typography sx={{ fontSize: "0.75rem", opacity: "0.6", my: "0.5rem", alignSelf: "center" }}>* Resolution lowered for faster loading</Typography>
+          <Typography sx={{ fontSize: "0.75rem", opacity: "0.6", my: "0.5rem", alignSelf: "center" }}>* Resolution lowered to increase load speed</Typography>
 
           {/* render strips */}
           <Grid container spacing={1}>

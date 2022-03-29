@@ -77,11 +77,29 @@ const Header = function () {
                   alignItems: "left"
                 }}
               >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu} > 
-                    <Button style={{justifyContent: "flex-start"}} sx={{ color: "#180400" }} disableFocusRipple={true} disableRipple={true} href={`#${page.toLowerCase()}`} >{page}</Button>
-                  </MenuItem>
-                ))}
+                {pages.map((page) => {
+
+                  let navLink;
+                  if (window.location.pathname === '/home') {
+                    navLink = `#${page.toLowerCase()}`;
+                  } else if (window.location.pathname === '/strips') {
+                    navLink = `home#${page.toLowerCase()}`;
+                  }
+                  return (
+                    <MenuItem key={page} onClick={handleCloseNavMenu} >
+                      <Button
+                        style={{ justifyContent: "flex-start" }}
+                        sx={{ color: "#180400" }}
+                        disableFocusRipple={true}
+                        disableRipple={true}
+                        href={navLink} >
+                        {page}
+                      </Button>
+                    </MenuItem>
+                  );
+                }
+
+                )}
 
               </Menu>
 
@@ -99,21 +117,30 @@ const Header = function () {
 
             {/* HORIZONTAL MENU */}
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              {pages.map((page) => (
-                <Button
-                  key={page}
-                  href={`#${page.toLowerCase()}`}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: '#F5DABB', display: 'block', "&:hover": { color: "#FFF" }}}
-                >
-                  {page}
-                </Button>
-              ))}
+              {pages.map((page) => {
+                let navLink;
+                if (window.location.pathname === '/home') {
+                  navLink = `#${page.toLowerCase()}`;
+                } else if (window.location.pathname === '/strips') {
+                  navLink = `home#${page.toLowerCase()}`;
+                }
+                return (
+                  <Button
+                    key={page}
+                    href={navLink}
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: '#F5DABB', display: 'block', "&:hover": { color: "#FFF" } }}
+                  >
+                    {page}
+                  </Button>
+                );
+              }
+              )}
             </Box>
 
 
             <Box sx={{ flexGrow: 0 }}>
-              <SocialLinks isLight={true}/>
+              <SocialLinks isLight={true} />
             </Box>
 
           </Toolbar>
