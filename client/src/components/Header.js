@@ -10,6 +10,8 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import SocialLinks from './SocialLinks';
+import { Link } from 'react-router-dom';
+
 
 const pages = ['About', 'Roadmap', 'Team', 'Rarity', 'Mint'];
 
@@ -39,7 +41,9 @@ const Header = function () {
               component="div"
               sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
             >
-              <img style={{ height: "50px" }} src="https://d3f9hpbghq9tuf.cloudfront.net/logo-no-paddingX-light.png" alt="logo" />
+              <Link to="/home" style={{ textDecoration: "none", lineHeight: "0" }}>
+                <img style={{ height: "50px" }} src="https://d3f9hpbghq9tuf.cloudfront.net/logo-no-paddingX-light.png" alt="logo" />
+              </Link>
 
             </Typography>
 
@@ -100,6 +104,7 @@ const Header = function () {
                 }
 
                 )}
+                <Link style={{ textDecoration: "none" }} to="/strips"><MenuItem><Button disableRipple disableFocusRipple sx={{ color: "#180400" }} style={{ justifyContent: "flex-start" }}>Strips</Button></MenuItem></Link>
 
               </Menu>
 
@@ -111,7 +116,9 @@ const Header = function () {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
             >
-              <img style={{ height: "50px" }} src="https://d3f9hpbghq9tuf.cloudfront.net/logo-no-paddingX-light.png" alt="logo" />
+              <Link to="/home" style={{ textDecoration: "none", lineHeight: "0" }}>
+                <img style={{ height: "50px" }} src="https://d3f9hpbghq9tuf.cloudfront.net/logo-no-paddingX-light.png" alt="logo" />
+              </Link>
             </Typography>
 
 
@@ -129,13 +136,14 @@ const Header = function () {
                     key={page}
                     href={navLink}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: '#F5DABB', display: 'block', "&:hover": { color: "#FFF" } }}
+                    sx={styles.buttonStyle}
                   >
                     {page}
                   </Button>
                 );
               }
               )}
+              <Link style={{ textDecoration: "none" }} to="/strips"><Button disableRipple disableFocusRipple sx={styles.buttonStyle}>Strips</Button></Link>
             </Box>
 
 
@@ -149,6 +157,10 @@ const Header = function () {
       </AppBar >
     </div >
   );
+};
+
+const styles = {
+  buttonStyle: { my: 2, color: '#F5DABB', display: 'block', "&:hover": { color: "#FFF" } }
 };
 
 export default Header;
