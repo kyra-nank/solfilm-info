@@ -9,20 +9,20 @@ const Mint = function () {
   return (
     <section id="mint">
       <Box style={{ paddingTop: "5rem", paddingBottom: "5rem" }}>
-        
+
         <Typography variant="h5" style={{ marginBottom: "2rem", color: "#FFF" }}>MINT | "Solfilm ISO 001" &#128064;</Typography>
-        
-        <Grid container spacing={5} alignItems="center" justifyContent="center" sx={{paddingTop: "2rem"}}>
-          
+
+        <Grid container spacing={5} alignItems="center" justifyContent="center" sx={{ paddingTop: "2rem" }}>
+
           <Grid item xs={12} md={6} align="center">
             <img alt="mint collection" style={{ maxHeight: "20rem", maxWidth: "98%", height: "auto", width: "auto" }} src="https://d3f9hpbghq9tuf.cloudfront.net/preview.gif" />
           </Grid>
-          
+
           <Grid item xs={12} md={6} align="center">
             <Box>
-              <Typography variant="subtitle1">To Be Announced</Typography>
+              <Typography variant="subtitle1">18/05/2022</Typography>
               <Button disableRipple disableFocusRipple style={styles.buttonStyle} variant="contained">MINT 1.0 SOL</Button>
-              <SocialLinks isLight={true}/>
+              <SocialLinks isLight={true} />
             </Box>
           </Grid>
 
@@ -44,6 +44,6 @@ const styles = {
     opacity: "0.5",
     cursor: "default"
   }
-}
+};
 
 export default Mint;
